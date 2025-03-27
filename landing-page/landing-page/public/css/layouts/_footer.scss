@@ -1,0 +1,271 @@
+.footer {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #2a8300;
+    border-radius: 100px 100px 0 0;
+    @include respond(xl) {
+        border-radius: 80px 80px 0 0;
+    }
+    @include respond(lg) {
+        border-radius: 50px 50px 0 0;
+    }
+    @include respond(md) {
+        border-radius: 30px 30px 0 0;
+    }
+    @include respond(sm) {
+        border-radius: 10px 10px 0 0;
+    }
+    &-in {
+        gap: 90px;
+        padding-bottom: 96px;
+        border-bottom: 3px solid #f8f8f8;
+        @include respond(md) {
+            padding-bottom: 50px;
+        }
+    }
+    &-left__block {
+        padding: 74px 0 0 77px;
+        max-width: 1137px;
+        min-width: 1137px;
+        @include respond(xxl) {
+            max-width: 100%;
+            min-width: 100%;
+            padding: 70px 50px 0 50px;
+        }
+        @include respond(lg) {
+            padding: 50px 20px 0 20px;
+        }
+        .footer-content {
+            margin-bottom: 46px;
+            gap: 30px;
+            .footer-location__contact {
+                .logo {
+                    margin-bottom: 60px;
+                    img {
+                        filter: brightness(0) saturate(100%) invert(100%) sepia(42%) saturate(333%) hue-rotate(150deg)
+                            brightness(111%) contrast(94%);
+                        @include respond(xl) {
+                            max-height: 100px;
+                        }
+                        @include respond(sm) {
+                            max-height: 70px;
+                        }
+                    }
+                }
+                .footer-contact__wrapper {
+                    gap: 40px;
+                    .location {
+                        max-width: 358px;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 130%;
+                        color: #f8f8f8;
+                        @include respond(xl) {
+                            font-size: 24px;
+                        }
+                        @include respond(md) {
+                            max-width: 576px;
+                            margin: 0 auto;
+                            font-size: 20px;
+                        }
+                        @include respond(sm) {
+                            font-size: 16px;
+                        }
+                    }
+                    .footer-contact {
+                        @include respond(lg) {
+                            gap: 20px;
+                        }
+                        .contact-item {
+                            gap: 10px;
+                            .contact-link {
+                                font-family: var(--font-family);
+                                font-weight: 400;
+                                font-size: 30px;
+                                white-space: nowrap;
+                                color: #f8f8f8;
+                                @include respond(xl) {
+                                    font-size: 24px;
+                                }
+                                @include respond(md) {
+                                    font-size: 20px;
+                                }
+                                @include respond(sm) {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-nav {
+                .nav-head {
+                    margin-bottom: 42px;
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #f8f8f8;
+                    @include respond(xl) {
+                        font-size: 24px;
+                    }
+                    @include respond(md) {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+                    @include respond(sm) {
+                        font-size: 16px;
+                    }
+                }
+                .nav-list {
+                    gap: 23px;
+                }
+                &__link {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: #f8f8f8;
+                    @include respond(xl) {
+                        font-size: 24px;
+                    }
+                    @include respond(md) {
+                        font-size: 20px;
+                    }
+                    @include respond(sm) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .footer-form {
+            .form-label {
+                margin-bottom: 28px;
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 30px;
+                color: #f8f8f8;
+                @include respond(xl) {
+                    font-size: 24px;
+                }
+                @include respond(md) {
+                    font-size: 20px;
+                }
+                @include respond(sm) {
+                    font-size: 16px;
+                }
+            }
+            &__group {
+                gap: 27px;
+                @include respond(lg) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .form_control {
+                    max-width: 372px;
+                    @include respond(lg) {
+                        max-width: calc(50% - 13.5px);
+                    }
+                    @include respond(md) {
+                        max-width: 100%;
+                    }
+                    .form_input {
+                        height: 100%;
+                        padding: 18px 10px 18px 40px;
+                        border: 3px solid #f8f8f8;
+                        border-radius: 100px;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 30px;
+                        color: rgba(248, 248, 248, 1);
+                        @include respond(xl) {
+                            font-size: 24px;
+                        }
+                        @include respond(md) {
+                            font-size: 20px;
+                        }
+                        @include respond(sm) {
+                            font-size: 16px;
+                        }
+                        &::placeholder {
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 30px;
+                            color: rgba(248, 248, 248, 0.6);
+                            @include respond(xl) {
+                                font-size: 24px;
+                            }
+                            @include respond(md) {
+                                font-size: 20px;
+                            }
+                            @include respond(sm) {
+                                font-size: 16px;
+                            }
+                        }
+                        &:focus {
+                            background-color: transparent;
+                            outline: none;
+                        }
+                    }
+                }
+                .subscribe-btn {
+                    max-width: 264px;
+                    padding: 22px 10px;
+                    background: #f8f8f8;
+                    border-radius: 100px;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 41px;
+                    color: #2a8300;
+                    @include respond(xl) {
+                        max-width: 220px;
+                        padding: 16px 10px;
+                        font-size: 24px;
+                    }
+
+                    @include respond(md) {
+                        max-width: 100%;
+                        font-size: 20px;
+                    }
+                    @include respond(sm) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    &-right__block {
+        margin: -185px -1024px 0 0;
+        @include respond(xxl) {
+            display: none;
+        }
+        .border-rounded {
+            border: 3px solid #f8f8f8;
+            border-radius: 100px;
+            width: 1668px;
+            height: 370px;
+            &:first-child {
+                margin: 0 0 50px 50px;
+            }
+        }
+    }
+    &-bottom {
+        padding: 45px 0;
+        @include respond(md) {
+            padding: 30px 0;
+        }
+        .author {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #f8f8f8;
+            @include respond(xl) {
+                font-size: 24px;
+            }
+            @include respond(sm) {
+                font-size: 16px;
+            }
+        }
+    }
+}

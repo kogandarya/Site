@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    background-color: transparent;
+}
+html {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+body {
+    background: #f8f8f8;
+}
+.main-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

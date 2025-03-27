@@ -1,0 +1,688 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/global";
+@import "./layouts/header";
+@import "./layouts/footer";
+
+.home {
+    margin-bottom: 47px;
+    .home-title {
+        margin-bottom: 40px;
+        padding: 0 70px;
+        @include respond(lg) {
+            padding: 0 50px;
+        }
+        @include respond(md) {
+            padding: 0 40px;
+            margin-bottom: 20px;
+        }
+        @include respond(sm) {
+            padding: 0;
+        }
+        .title {
+            margin-bottom: 4px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 150px;
+            text-transform: uppercase;
+            color: #2a8300;
+            @include respond(xxl) {
+                font-size: 120px;
+            }
+            @include respond(xl) {
+                font-size: 100px;
+            }
+            @include respond(lg) {
+                font-size: 80px;
+            }
+            @include respond(md) {
+                font-size: 60px;
+            }
+            @include respond(sm) {
+                font-size: 35px;
+            }
+            span {
+                font-family: var(--second-family);
+            }
+        }
+    }
+    .home-img {
+        img {
+            max-width: 100%;
+            width: 100%;
+            border-radius: 100px;
+            min-height: 350px;
+            object-fit: cover;
+            @include respond(xl) {
+                border-radius: 80px;
+            }
+            @include respond(lg) {
+                border-radius: 50px;
+            }
+            @include respond(md) {
+                border-radius: 30px;
+            }
+            @include respond(sm) {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.our-services {
+    &__in {
+        background: #2a8300;
+        border-radius: 100px;
+        padding: 35px 85px 95px;
+        @include respond(xxl) {
+            padding: 35px 30px 50px;
+        }
+        @include respond(xl) {
+            border-radius: 80px;
+        }
+        @include respond(lg) {
+            border-radius: 50px;
+        }
+        @include respond(md) {
+            border-radius: 30px;
+        }
+        @include respond(sm) {
+            border-radius: 10px;
+            padding: 30px 20px;
+        }
+        .block-title {
+            margin-bottom: 65px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 100px;
+            text-transform: uppercase;
+            color: #f8f8f8;
+            @include respond(xxl) {
+                font-size: 80px;
+            }
+            @include respond(lg) {
+                font-size: 60px;
+                margin-bottom: 50px;
+            }
+            @include respond(md) {
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+            @include respond(sm) {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            span {
+                font-family: var(--second-family);
+            }
+        }
+        .services-list {
+            gap: 47px;
+            @include respond(sm) {
+                gap: 25px;
+            }
+            .services-card {
+                flex: 1 1 calc(45% - 23.5px);
+                background: #f8f8f8;
+                border-radius: 100px;
+                padding: 70px 140px 85px 50px;
+                @include respond(xl) {
+                    border-radius: 80px;
+                }
+                @include respond(lg) {
+                    border-radius: 50px;
+                }
+                @include respond(md) {
+                    border-radius: 30px;
+                }
+                @include respond(sm) {
+                    padding: 30px 20px 50px 20px;
+                    border-radius: 10px;
+                }
+                &:hover {
+                    transform: scale(1.015);
+                    box-shadow:
+                        0 14px 28px rgba(0, 0, 0, 0.25),
+                        0 10px 10px rgba(0, 0, 0, 0.22);
+                }
+                &:first-child,
+                &:last-child {
+                    flex: 1 1 calc(55% - 23.5px);
+                }
+                &__title {
+                    margin-bottom: 50px;
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #2a8300;
+                    @include respond(lg) {
+                        font-size: 24px;
+                        margin-bottom: 30px;
+                    }
+                    @include respond(md) {
+                        margin-bottom: 20px;
+                    }
+                    @include respond(sm) {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+                }
+                &__description {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: #262d23;
+                    @include respond(lg) {
+                        font-size: 24px;
+                    }
+                    @include respond(sm) {
+                        font-size: 16px;
+                    }
+                }
+                .icon {
+                    bottom: 50px;
+                    right: 60px;
+                    @include respond(sm) {
+                        bottom: 20px;
+                        right: 20px;
+                    }
+                    svg {
+                        @include respond(sm) {
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.our-promotions {
+    padding-top: 80px;
+    @include respond(sm) {
+        padding-top: 50px;
+    }
+    .block-title {
+        padding: 0 70px;
+        margin-bottom: 66px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 100px;
+        text-transform: uppercase;
+        color: #2a8300;
+        @include respond(xxl) {
+            font-size: 80px;
+            padding: 0 30px;
+        }
+        @include respond(xl) {
+            padding: 0;
+        }
+        @include respond(lg) {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        @include respond(md) {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        @include respond(sm) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        span {
+            font-family: var(--second-family);
+        }
+    }
+    &__in {
+        gap: 90px;
+        @include respond(xxl) {
+            gap: 50px;
+        }
+        @include respond(xl) {
+            flex-direction: column;
+            gap: 30px;
+        }
+        .our-promotions__list {
+            max-width: 760px;
+            gap: 35px;
+            padding-left: 70px;
+            @include respond(xxl) {
+                padding-left: 30px;
+            }
+            @include respond(xl) {
+                max-width: 100%;
+                gap: 30px;
+                padding-left: 0;
+            }
+            @include respond(lg) {
+                gap: 25px;
+            }
+            @include respond(md) {
+                gap: 20px;
+            }
+            @include respond(sm) {
+                gap: 15px;
+            }
+            .list-item {
+                padding: 15px 0;
+                gap: 15px;
+                border-bottom: 3px solid #2a8300;
+                cursor: pointer;
+                @include respond(md) {
+                    padding: 10px 0;
+                    border-width: 2px;
+                }
+                .promotions-text {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: #262d23;
+                    @include respond(lg) {
+                        font-size: 24px;
+                    }
+                    @include respond(md) {
+                        font-size: 20px;
+                    }
+                    @include respond(sm) {
+                        font-size: 16px;
+                    }
+                }
+                .arrown {
+                    @include respond(sm) {
+                        svg {
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .our-promotions__img {
+            max-width: 904px;
+            @include respond(xl) {
+                max-width: 100%;
+            }
+            img {
+                max-width: 100%;
+                width: 100%;
+                border-radius: 100px;
+                min-height: 350px;
+                object-fit: cover;
+                @include respond(xl) {
+                    border-radius: 80px;
+                }
+                @include respond(lg) {
+                    border-radius: 50px;
+                }
+                @include respond(md) {
+                    border-radius: 30px;
+                }
+                @include respond(sm) {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+.our-facts {
+    padding-top: 80px;
+    margin-bottom: 120px;
+    overflow: hidden;
+    &__in {
+        .block-title {
+            margin-bottom: 66px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 100px;
+            text-transform: uppercase;
+            color: #2a8300;
+            @include respond(xxl) {
+                font-size: 80px;
+            }
+            @include respond(lg) {
+                font-size: 60px;
+                margin-bottom: 50px;
+            }
+            @include respond(md) {
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+            @include respond(sm) {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            span {
+                font-family: var(--second-family);
+            }
+        }
+        .our-facts__list {
+            gap: 50px;
+            @include respond(lg) {
+                gap: 25px;
+            }
+            .list-item {
+                position: relative;
+                &:nth-child(2n + 1) {
+                    .list-item__in {
+                        border-left: 0;
+                        border-radius: 0 100px 100px 0;
+                        @include respond(xl) {
+                            border-radius: 0 70px 70px 0;
+                        }
+                        @include respond(md) {
+                            border-radius: 0 50px 50px 0;
+                        }
+                        @include respond(sm) {
+                            border-radius: 0 30px 30px 0;
+                        }
+                        &::after {
+                            content: "";
+                            width: 100vw;
+                            height: 0;
+                            border-top: 10px solid #2a8300;
+                            position: absolute;
+                            top: -10px;
+                            right: calc(100% - 2px);
+                            @include respond(md) {
+                                border-width: 4px;
+                                top: -4px;
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            width: 100vw;
+                            height: 0;
+                            border-bottom: 10px solid #2a8300;
+                            position: absolute;
+                            bottom: -10px;
+                            right: calc(100% - 2px);
+                            @include respond(md) {
+                                border-width: 4px;
+                                bottom: -4px;
+                            }
+                        }
+                        .our-facts__list__description {
+                            padding-left: 70px;
+                            @include respond(xxl) {
+                                padding-left: 30px;
+                            }
+                            @include respond(lg) {
+                                padding-left: 0;
+                            }
+                        }
+                        .fucts-number {
+                            border-left: 10px solid #2a8300;
+                            @include respond(md) {
+                                border-width: 4px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2n) {
+                    .list-item__in {
+                        border-right: 0;
+                        border-radius: 100px 0 0 100px;
+
+                        @include respond(xl) {
+                            border-radius: 70px 0 0 70px;
+                        }
+                        @include respond(md) {
+                            border-radius: 50px 0 0 50px;
+                        }
+                        @include respond(sm) {
+                            border-radius: 30px 0 0 30px;
+                        }
+                        &::after {
+                            content: "";
+                            width: 100vw;
+                            height: 0;
+                            border-top: 10px solid #2a8300;
+                            position: absolute;
+                            top: -10px;
+                            left: calc(100% - 2px);
+                            @include respond(md) {
+                                border-width: 4px;
+                                top: -4px;
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            width: 100vw;
+                            height: 0;
+                            border-bottom: 10px solid #2a8300;
+                            position: absolute;
+                            bottom: -10px;
+                            left: calc(100% - 2px);
+                            @include respond(md) {
+                                border-width: 4px;
+                                bottom: -4px;
+                            }
+                        }
+                        .fucts-number {
+                            border-right: 10px solid #2a8300;
+                            @include respond(md) {
+                                border-width: 4px;
+                            }
+                        }
+                    }
+                }
+                &__in {
+                    max-width: calc(100% - 375px);
+                    border: 10px solid #2a8300;
+                    padding: 37px 0;
+                    gap: 80px;
+                    min-height: 370px;
+                    @include respond(xxl) {
+                        max-width: calc(90%);
+                        min-height: 300px;
+                    }
+                    @include respond(xl) {
+                        min-height: 200px;
+                        padding: 25px 0;
+                    }
+                    @include respond(md) {
+                        border-width: 4px;
+                        gap: 20px;
+                        padding: 20px 0;
+                        min-height: 150px;
+                    }
+                    @include respond(sm) {
+                        max-width: calc(95%);
+                        padding: 10px 0;
+                        gap: 15px;
+                        min-height: 100px;
+                    }
+                    .our-facts__list__description {
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 60px;
+                        color: #262d23;
+                        @include respond(xxl) {
+                            font-size: 40px;
+                        }
+                        @include respond(xl) {
+                            font-size: 30px;
+                        }
+                        @include respond(md) {
+                            font-size: 24px;
+                        }
+                        @include respond(md) {
+                            font-size: 14px;
+                        }
+                    }
+                    .fucts-number {
+                        padding: 0 120px;
+                        font-family: var(--second-family);
+                        font-weight: 400;
+                        font-size: 150px;
+                        color: #262d23;
+                        @include respond(xxl) {
+                            font-size: 100px;
+                            padding: 0 80px;
+                        }
+                        @include respond(xl) {
+                            font-size: 80px;
+                            padding: 0 60px;
+                        }
+                        @include respond(md) {
+                            font-size: 70px;
+                            padding: 0 40px;
+                        }
+                        @include respond(sm) {
+                            font-size: 40px;
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.residential-complexes {
+    &__in {
+        border-radius: 100px;
+        overflow: hidden;
+        padding: 100px 0 80px;
+        background: url("/public/image/residential-complexes-bg.png") no-repeat center/cover;
+        @include respond(xl) {
+            border-radius: 80px;
+        }
+        @include respond(lg) {
+            border-radius: 50px;
+            padding: 80px 0;
+        }
+        @include respond(md) {
+            border-radius: 30px;
+            padding: 60px 0;
+        }
+        @include respond(sm) {
+            border-radius: 10px;
+            padding: 30px 0;
+        }
+        .block-title {
+            max-width: 1240px;
+            margin: 0 auto 170px;
+            padding: 0 20px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 90px;
+            color: #262d23;
+            @include respond(xxl) {
+                font-size: 80px;
+            }
+            @include respond(xl) {
+                font-size: 70px;
+            }
+            @include respond(lg) {
+                font-size: 60px;
+            }
+            @include respond(md) {
+                font-size: 40px;
+            }
+            @include respond(sm) {
+                font-size: 24px;
+                margin-bottom: 100px;
+            }
+        }
+        .residential-complexes__button {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .goto-btn {
+            border: 3px solid #2a8300;
+            border-radius: 100px;
+            padding: 24px 70px;
+            gap: 50px;
+            @include respond(xl) {
+                border-radius: 80px;
+                padding: 20px 50px;
+                gap: 30px;
+            }
+            @include respond(md) {
+                border-radius: 50px;
+                padding: 15px 30px;
+                gap: 20px;
+                border-width: 2px;
+            }
+
+            span {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 60px;
+                color: #2a8300;
+                @include respond(xxl) {
+                    font-size: 50px;
+                }
+                @include respond(xl) {
+                    font-size: 40px;
+                }
+                @include respond(lg) {
+                    font-size: 30px;
+                }
+                @include respond(md) {
+                    font-size: 20px;
+                }
+                @include respond(sm) {
+                    font-size: 16px;
+                }
+            }
+            .icon {
+                @include respond(xl) {
+                    svg {
+                        height: 30px;
+                    }
+                }
+                @include respond(md) {
+                    svg {
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.our-address-map {
+    padding-top: 100px;
+    margin-bottom: 120px;
+    @include respond(lg) {
+        margin-bottom: 80px;
+    }
+    @include respond(sm) {
+        margin-bottom: 50px;
+    }
+    .block-title {
+        margin-bottom: 45px;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 100px;
+        text-transform: uppercase;
+        color: #2a8300;
+        @include respond(xxl) {
+            font-size: 80px;
+        }
+        @include respond(lg) {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        @include respond(md) {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        @include respond(sm) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        span {
+            font-family: var(--font-family);
+        }
+    }
+    #map {
+        height: 996px;
+        width: 100%;
+        @include respond(xxl) {
+            height: 576px;
+        }
+        .ymaps-2-1-79-map {
+            height: 100% !important;
+        }
+    }
+}

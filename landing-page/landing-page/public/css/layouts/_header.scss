@@ -1,0 +1,77 @@
+.header {
+    padding: 60px 0;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #2a8300;
+    z-index: 10;
+    @include respond(lg) {
+        padding: 20px 0;
+    }
+    @include respond(md) {
+        margin-bottom: 20px;
+    }
+    &-in {
+        gap: 20px;
+        .logo {
+            img {
+                @include respond(xl) {
+                    max-height: 100px;
+                }
+                @include respond(sm) {
+                    max-height: 65px;
+                }
+            }
+        }
+        .header-nav {
+            max-width: 880px;
+            @include respond(xxl) {
+                max-width: fit-content;
+            }
+            @include respond(md) {
+                max-width: 100%;
+                height: calc(100vh - 142px);
+                backdrop-filter: blur(15px);
+                position: absolute;
+                top: calc(100% + 3px);
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                &.show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            @include respond(md) {
+                height: calc(100vh - 108px);
+            }
+            .nav-list {
+                gap: 20px;
+                @include respond(xxl) {
+                    gap: 30px;
+                }
+                @include respond(lg) {
+                    gap: 20px;
+                }
+                @include respond(md) {
+                    height: 100%;
+                    gap: 30px;
+                }
+            }
+            &__link {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 30px;
+                color: #2a8300;
+                @include respond(lg) {
+                    font-size: 20px;
+                }
+                @include respond(md) {
+                    color: #262d23;
+                }
+                @include respond(sm) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <title>index</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header position-relative">
+      <div class="main-container">
+        <div
+          class="header-in d-flex align-items-center justify-content-between"
+        >
+          <div class="logo">
+            <a href="./index.html" class="logo-link">
+              <img src="./public/image/logo.svg" alt="" />
+            </a>
+          </div>
+          <nav class="header-nav w-100">
+            <ul
+              class="nav-list d-flex flex-md-row flex-column align-items-center justify-content-md-between justify-content-center"
+            >
+              <li class="list-item">
+                <a href="#services" class="header-nav__link">Услуги</a>
+              </li>
+              <li class="list-item">
+                <a href="#promotions" class="header-nav__link">Акции</a>
+              </li>
+              <li class="list-item">
+                <a href="#facts" class="header-nav__link">Факты</a>
+              </li>
+              <li class="list-item">
+                <a href="#contact" class="header-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger-btn d-md-none d-block" onclick="openBurger()">
+            <img src="./public/image/burger.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- home -->
+    <section class="home">
+      <div class="main-container">
+        <div class="home-title">
+          <h1 class="title" data-aos="fade-right">Найди <span> дом</span></h1>
+          <h1 class="title text-end" data-aos="fade-left">
+            своей <span>мечты</span>
+          </h1>
+        </div>
+        <div class="home-img" data-aos="slide-up">
+          <img src="./public/image/home-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home -->
+
+    <!-- our services -->
+    <section class="our-services" id="services">
+      <div class="main-container">
+        <div class="our-services__in">
+          <h2 class="block-title text-center" data-aos="slide-up">
+            НАШИ <span>УСЛУГИ</span>
+          </h2>
+          <ul
+            class="services-list d-flex flex-lg-row flex-column align-items-stretch flex-wrap"
+          >
+            <li
+              class="list-item services-card position-relative"
+              data-aos="slide-up"
+            >
+              <h4 class="services-card__title">ПОДБОР КВАРТИРЫ</h4>
+              <p class="services-card__description">
+                Наши специалисты качественно подберут Вам подходящую квартиру из
+                базы в более чем ста жилищных комплексов.
+              </p>
+              <div class="icon position-absolute">
+                <svg
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.93934 36.2946C0.353553 36.8804 0.353553 37.8301 0.93934 38.4159C1.52513 39.0017 2.47487 39.0017 3.06066 38.4159L0.93934 36.2946ZM38.8553 1.99989C38.8553 1.17146 38.1838 0.499886 37.3553 0.499885L23.8553 0.499887C23.0269 0.499886 22.3553 1.17146 22.3553 1.99989C22.3553 2.82831 23.0269 3.49989 23.8553 3.49989L35.8553 3.49989L35.8553 15.4999C35.8553 16.3283 36.5269 16.9999 37.3553 16.9999C38.1838 16.9999 38.8553 16.3283 38.8553 15.4999L38.8553 1.99989ZM3.06066 38.4159L38.416 3.06055L36.2947 0.939226L0.93934 36.2946L3.06066 38.4159Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item services-card position-relative"
+              data-aos="slide-up"
+            >
+              <h4 class="services-card__title">ИПОТЕКА</h4>
+              <p class="services-card__description">
+                Поможем подобрать и оформить ипотеку на покупку жилья.
+              </p>
+              <div class="icon position-absolute">
+                <svg
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.93934 36.2946C0.353553 36.8804 0.353553 37.8301 0.93934 38.4159C1.52513 39.0017 2.47487 39.0017 3.06066 38.4159L0.93934 36.2946ZM38.8553 1.99989C38.8553 1.17146 38.1838 0.499886 37.3553 0.499885L23.8553 0.499887C23.0269 0.499886 22.3553 1.17146 22.3553 1.99989C22.3553 2.82831 23.0269 3.49989 23.8553 3.49989L35.8553 3.49989L35.8553 15.4999C35.8553 16.3283 36.5269 16.9999 37.3553 16.9999C38.1838 16.9999 38.8553 16.3283 38.8553 15.4999L38.8553 1.99989ZM3.06066 38.4159L38.416 3.06055L36.2947 0.939226L0.93934 36.2946L3.06066 38.4159Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item services-card position-relative"
+              data-aos="slide-up"
+            >
+              <h4 class="services-card__title">ПРОДАЖА ВТОРИЧНОГО ЖИЛЬЯ</h4>
+              <p class="services-card__description">
+                Поможем продать Вашу квартиру на вторичном рынке.
+              </p>
+              <div class="icon position-absolute">
+                <svg
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.93934 36.2946C0.353553 36.8804 0.353553 37.8301 0.93934 38.4159C1.52513 39.0017 2.47487 39.0017 3.06066 38.4159L0.93934 36.2946ZM38.8553 1.99989C38.8553 1.17146 38.1838 0.499886 37.3553 0.499885L23.8553 0.499887C23.0269 0.499886 22.3553 1.17146 22.3553 1.99989C22.3553 2.82831 23.0269 3.49989 23.8553 3.49989L35.8553 3.49989L35.8553 15.4999C35.8553 16.3283 36.5269 16.9999 37.3553 16.9999C38.1838 16.9999 38.8553 16.3283 38.8553 15.4999L38.8553 1.99989ZM3.06066 38.4159L38.416 3.06055L36.2947 0.939226L0.93934 36.2946L3.06066 38.4159Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item services-card position-relative"
+              data-aos="slide-up"
+            >
+              <h4 class="services-card__title">СОПРОВОЖДЕНИЕ СДЕЛОК</h4>
+              <p class="services-card__description">
+                Проконтролируем все этапы сделки, от проверки документов до
+                получения ключей.
+              </p>
+              <div class="icon position-absolute">
+                <svg
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.93934 36.2946C0.353553 36.8804 0.353553 37.8301 0.93934 38.4159C1.52513 39.0017 2.47487 39.0017 3.06066 38.4159L0.93934 36.2946ZM38.8553 1.99989C38.8553 1.17146 38.1838 0.499886 37.3553 0.499885L23.8553 0.499887C23.0269 0.499886 22.3553 1.17146 22.3553 1.99989C22.3553 2.82831 23.0269 3.49989 23.8553 3.49989L35.8553 3.49989L35.8553 15.4999C35.8553 16.3283 36.5269 16.9999 37.3553 16.9999C38.1838 16.9999 38.8553 16.3283 38.8553 15.4999L38.8553 1.99989ZM3.06066 38.4159L38.416 3.06055L36.2947 0.939226L0.93934 36.2946L3.06066 38.4159Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- our services -->
+
+    <!-- our promotions -->
+    <section class="our-promotions" id="promotions">
+      <div class="main-container">
+        <h2 class="block-title" data-aos="slide-up">НАШИ <span>АКЦИИ</span></h2>
+        <div class="our-promotions__in d-flex justify-content-between">
+          <ul class="our-promotions__list w-100 d-flex flex-column">
+            <li
+              class="list-item d-flex align-items-center justify-content-between"
+              data-aos="slide-up"
+              data-aos="slide-up"
+            >
+              <p class="promotions-text">Рассрочка с ПВ 20 % до конца года</p>
+              <div class="arrown">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807611 1.97919 0.807611 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97919 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5H12V10.5H11V13.5Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item d-flex align-items-center justify-content-between"
+              data-aos="slide-up"
+              data-aos="slide-up"
+            >
+              <p class="promotions-text">Скидка 5 % от “Красной цены”</p>
+              <div class="arrown">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807611 1.97919 0.807611 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97919 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5H12V10.5H11V13.5Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item d-flex align-items-center justify-content-between"
+              data-aos="slide-up"
+            >
+              <p class="promotions-text">Весеннее снижение цен</p>
+              <div class="arrown">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807611 1.97919 0.807611 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97919 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5H12V10.5H11V13.5Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item d-flex align-items-center justify-content-between"
+              data-aos="slide-up"
+            >
+              <p class="promotions-text">Ипотека со скидкой до 10 %</p>
+              <div class="arrown">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807611 1.97919 0.807611 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97919 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5H12V10.5H11V13.5Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item d-flex align-items-center justify-content-between"
+              data-aos="slide-up"
+            >
+              <p class="promotions-text">Сопровождение сделки - 39 000 руб.</p>
+              <div class="arrown">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807611 1.97919 0.807611 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97919 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5H12V10.5H11V13.5Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="list-item d-flex align-items-center justify-content-between"
+              data-aos="slide-up"
+            >
+              <p class="promotions-text">
+                Подробнее о действующих акциях вам расскажет наш консультант
+                Марина
+              </p>
+              <div class="arrown">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807611 1.97919 0.807611 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97919 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5H12V10.5H11V13.5Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <div class="our-promotions__img w-100" data-aos="slide-up">
+            <img src="./public/image/our-promotions-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our promotions -->
+
+    <!-- our facts -->
+    <section class="our-facts" id="facts">
+      <div class="main-container">
+        <div class="our-facts__in">
+          <h2 class="block-title text-center" data-aos="slide-up">
+            НАШИ <span>ФАКТЫ</span>
+          </h2>
+          <ul class="our-facts__list d-flex flex-column">
+            <li class="list-item d-flex">
+              <div
+                class="list-item__in d-flex align-items-stretch"
+                data-aos="fade-right"
+              >
+                <p
+                  class="our-facts__list__description d-flex align-items-center"
+                >
+                  Возвращаем до 50 000 руб, при покупке у нас
+                </p>
+                <h4 class="fucts-number d-flex align-items-center">01</h4>
+              </div>
+            </li>
+            <li class="list-item d-flex justify-content-end">
+              <div
+                class="list-item__in d-flex align-items-stretch"
+                data-aos="fade-left"
+              >
+                <h4 class="fucts-number d-flex align-items-center">02</h4>
+                <p
+                  class="our-facts__list__description d-flex align-items-center"
+                >
+                  Дарим пятому клиенту скидку около 60 000 руб.
+                </p>
+              </div>
+            </li>
+            <li class="list-item d-flex">
+              <div
+                class="list-item__in d-flex align-items-stretch"
+                data-aos="fade-right"
+              >
+                <p
+                  class="our-facts__list__description d-flex align-items-center"
+                >
+                  Вы не платите нам за нашу работу, наши услуги оплачивает
+                  застройщик
+                </p>
+                <h4 class="fucts-number d-flex align-items-center">03</h4>
+              </div>
+            </li>
+            <li class="list-item d-flex justify-content-end">
+              <div
+                class="list-item__in d-flex align-items-stretch"
+                data-aos="fade-left"
+              >
+                <h4 class="fucts-number d-flex align-items-center">04</h4>
+                <p
+                  class="our-facts__list__description d-flex align-items-center"
+                >
+                  Оформим ипотеку, работаем с более двадцати разными банками по
+                  ипотеке
+                </p>
+              </div>
+            </li>
+            <li class="list-item d-flex">
+              <div
+                class="list-item__in d-flex align-items-stretch"
+                data-aos="fade-right"
+              >
+                <p
+                  class="our-facts__list__description d-flex align-items-center"
+                >
+                  Представляем цены напрямую от застройщика
+                </p>
+                <h4 class="fucts-number d-flex align-items-center">05</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- our facts -->
+
+    <!-- residential complexes -->
+    <div class="residential-complexes">
+      <div class="main-container">
+        <div class="residential-complexes__in" data-aos="slide-up">
+          <h2 class="block-title">
+            20000 квартир в базе 100+ жилищных комплексов
+          </h2>
+          <div class="residential-complexes__button d-flex justify-content-end">
+            <a href="#" class="goto-btn d-flex align-items-center">
+              <span>Перейти</span>
+              <div class="icon">
+                <svg
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.93934 35.9393C0.353553 36.5251 0.353553 37.4749 0.93934 38.0607C1.52513 38.6464 2.47487 38.6464 3.06066 38.0607L0.93934 35.9393ZM38.8553 1.64466C38.8553 0.816235 38.1838 0.144662 37.3553 0.144661L23.8553 0.144663C23.0269 0.144661 22.3553 0.816235 22.3553 1.64466C22.3553 2.47309 23.0269 3.14466 23.8553 3.14466L35.8553 3.14466L35.8553 15.1447C35.8553 15.9731 36.5269 16.6447 37.3553 16.6447C38.1838 16.6447 38.8553 15.9731 38.8553 15.1447L38.8553 1.64466ZM3.06066 38.0607L38.416 2.70532L36.2947 0.584001L0.93934 35.9393L3.06066 38.0607Z"
+                    fill="#2A8300"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- residential complexes -->
+
+    <!-- our address map -->
+    <div class="our-address-map">
+      <div class="main-container">
+        <h2 class="block-title" data-aos="slide-up">
+          Как <span>нас</span> найти
+        </h2>
+      </div>
+      <div class="map" id="map" data-aos="slide-up"></div>
+    </div>
+    <!-- our address map -->
+
+    <!-- footer -->
+    <footer class="footer w-100 overflow-hidden" id="contact">
+      <div class="footer-in d-flex">
+        <div class="footer-left__block w-100">
+          <div
+            class="footer-content d-flex flex-md-row flex-column justify-content-between w-100"
+          >
+            <div class="footer-location__contact">
+              <div
+                class="logo d-flex justify-content-md-start justify-content-center"
+              >
+                <a href="#">
+                  <img src="./public/image/logo.svg" alt="" />
+                </a>
+              </div>
+              <div
+                class="footer-contact__wrapper d-flex flex-md-row flex-column justify-content-between"
+              >
+                <div class="location text-md-start text-center">
+                  <span class="float-left">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_1_402"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="24"
+                      >
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_1_402)">
+                        <path
+                          d="M12 22C10.2333 22 8.79167 21.7208 7.675 21.1625C6.55833 20.6042 6 19.8833 6 19C6 18.6 6.12083 18.2292 6.3625 17.8875C6.60417 17.5458 6.94167 17.25 7.375 17L8.95 18.475C8.8 18.5417 8.6375 18.6167 8.4625 18.7C8.2875 18.7833 8.15 18.8833 8.05 19C8.26667 19.2667 8.76667 19.5 9.55 19.7C10.3333 19.9 11.15 20 12 20C12.85 20 13.6708 19.9 14.4625 19.7C15.2542 19.5 15.7583 19.2667 15.975 19C15.8583 18.8667 15.7083 18.7583 15.525 18.675C15.3417 18.5917 15.1667 18.5167 15 18.45L16.55 16.95C17.0167 17.2167 17.375 17.5208 17.625 17.8625C17.875 18.2042 18 18.5833 18 19C18 19.8833 17.4417 20.6042 16.325 21.1625C15.2083 21.7208 13.7667 22 12 22ZM12.025 16.5C13.675 15.2833 14.9167 14.0625 15.75 12.8375C16.5833 11.6125 17 10.3833 17 9.15C17 7.45 16.4583 6.16667 15.375 5.3C14.2917 4.43333 13.1667 4 12 4C10.8333 4 9.70833 4.43333 8.625 5.3C7.54167 6.16667 7 7.45 7 9.15C7 10.2667 7.40833 11.4292 8.225 12.6375C9.04167 13.8458 10.3083 15.1333 12.025 16.5ZM12 19C9.65 17.2667 7.89583 15.5833 6.7375 13.95C5.57917 12.3167 5 10.7167 5 9.15C5 7.96667 5.2125 6.92917 5.6375 6.0375C6.0625 5.14583 6.60833 4.4 7.275 3.8C7.94167 3.2 8.69167 2.75 9.525 2.45C10.3583 2.15 11.1833 2 12 2C12.8167 2 13.6417 2.15 14.475 2.45C15.3083 2.75 16.0583 3.2 16.725 3.8C17.3917 4.4 17.9375 5.14583 18.3625 6.0375C18.7875 6.92917 19 7.96667 19 9.15C19 10.7167 18.4208 12.3167 17.2625 13.95C16.1042 15.5833 14.35 17.2667 12 19ZM12 11C12.55 11 13.0208 10.8042 13.4125 10.4125C13.8042 10.0208 14 9.55 14 9C14 8.45 13.8042 7.97917 13.4125 7.5875C13.0208 7.19583 12.55 7 12 7C11.45 7 10.9792 7.19583 10.5875 7.5875C10.1958 7.97917 10 8.45 10 9C10 9.55 10.1958 10.0208 10.5875 10.4125C10.9792 10.8042 11.45 11 12 11Z"
+                          fill="#F8F8F8"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                  Санкт-Петербург, р-н Центральный, Большая Морская ул., 3-5
+                </div>
+                <div class="footer-contact d-flex flex-column">
+                  <div
+                    class="contact-item d-flex align-items-center justify-content-md-start justify-content-center"
+                  >
+                    <div class="icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask
+                          id="mask0_1_406"
+                          style="mask-type: alpha"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="24"
+                          height="24"
+                        >
+                          <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_1_406)">
+                          <path
+                            d="M4 20C3.45 20 2.97917 19.8042 2.5875 19.4125C2.19583 19.0208 2 18.55 2 18V6C2 5.45 2.19583 4.97917 2.5875 4.5875C2.97917 4.19583 3.45 4 4 4H20C20.55 4 21.0208 4.19583 21.4125 4.5875C21.8042 4.97917 22 5.45 22 6V18C22 18.55 21.8042 19.0208 21.4125 19.4125C21.0208 19.8042 20.55 20 20 20H4ZM12 13L4 8V18H20V8L12 13ZM12 11L20 6H4L12 11ZM4 8V6V18V8Z"
+                            fill="#F8F8F8"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <a href="mail:info@izhora.ru" class="contact-link">
+                      info@izhora.ru
+                    </a>
+                  </div>
+                  <div
+                    class="contact-item d-flex align-items-center justify-content-md-start justify-content-center"
+                  >
+                    <div class="icon">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.95 18C14.8667 18 12.8083 17.5458 10.775 16.6375C8.74167 15.7292 6.89167 14.4417 5.225 12.775C3.55833 11.1083 2.27083 9.25833 1.3625 7.225C0.454167 5.19167 0 3.13333 0 1.05C0 0.75 0.1 0.5 0.3 0.3C0.5 0.1 0.75 0 1.05 0H5.1C5.33333 0 5.54167 0.0791667 5.725 0.2375C5.90833 0.395833 6.01667 0.583333 6.05 0.8L6.7 4.3C6.73333 4.56667 6.725 4.79167 6.675 4.975C6.625 5.15833 6.53333 5.31667 6.4 5.45L3.975 7.9C4.30833 8.51667 4.70417 9.1125 5.1625 9.6875C5.62083 10.2625 6.125 10.8167 6.675 11.35C7.19167 11.8667 7.73333 12.3458 8.3 12.7875C8.86667 13.2292 9.46667 13.6333 10.1 14L12.45 11.65C12.6 11.5 12.7958 11.3875 13.0375 11.3125C13.2792 11.2375 13.5167 11.2167 13.75 11.25L17.2 11.95C17.4333 12.0167 17.625 12.1375 17.775 12.3125C17.925 12.4875 18 12.6833 18 12.9V16.95C18 17.25 17.9 17.5 17.7 17.7C17.5 17.9 17.25 18 16.95 18ZM3.025 6L4.675 4.35L4.25 2H2.025C2.10833 2.68333 2.225 3.35833 2.375 4.025C2.525 4.69167 2.74167 5.35 3.025 6ZM11.975 14.95C12.625 15.2333 13.2875 15.4583 13.9625 15.625C14.6375 15.7917 15.3167 15.9 16 15.95V13.75L13.65 13.275L11.975 14.95Z"
+                          fill="#F8F8F8"
+                        />
+                      </svg>
+                    </div>
+                    <a href="tel:+78129995345" class="contact-link">
+                      +7 812 111 22 33
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-nav">
+              <h5 class="nav-head text-md-start text-center">Навигация</h5>
+              <ul
+                class="nav-list d-flex flex-column align-items-md-start align-items-center"
+              >
+                <li class="list-item">
+                  <a href="#services" class="footer-nav__link">Услуги</a>
+                </li>
+                <li class="list-item">
+                  <a href="#promotions" class="footer-nav__link">Акции</a>
+                </li>
+                <li class="list-item">
+                  <a href="#facts" class="footer-nav__link">Факты</a>
+                </li>
+                <li class="list-item">
+                  <a href="#contact" class="footer-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-form">
+            <form>
+              <label class="form-label text-md-start text-center w-100"
+                >Будь с нами</label
+              >
+              <div
+                class="footer-form__group d-flex flex-md-row flex-column align-items-stretch"
+              >
+                <div class="form_control w-100">
+                  <input
+                    type="text"
+                    placeholder="Введите Ваше имя"
+                    required
+                    id="name"
+                    class="form_input bg-transparent w-100"
+                  />
+                </div>
+                <div class="form_control w-100">
+                  <input
+                    type="email"
+                    placeholder="Введите Ваше E-mail"
+                    required
+                    id="email"
+                    class="form_input bg-transparent w-100"
+                  />
+                </div>
+                <button
+                  class="subscribe-btn w-100 text-center"
+                  onclick="sendEmail()"
+                >
+                  Подписаться
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-right__block">
+          <div class="border-rounded"></div>
+          <div class="border-rounded"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="author text-center">© 2025 4-МД-15</p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./public/js/app.js"></script>
+  </body>
+</html>
